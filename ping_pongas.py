@@ -28,18 +28,6 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             exit()
-        """
-        if event.type == KEYDOWN:
-            if event.key == K_w and altura_parede_esquerda > 0:
-                altura_parede_esquerda -= 10
-            if event.key == K_s and altura_parede_esquerda < altura - 150:
-                altura_parede_esquerda += 10
-            
-            if event.key == K_UP and altura_parede_direita > 0:
-                altura_parede_direita -= 10
-            if event.key == K_DOWN and altura_parede_direita < altura - 150:
-                altura_parede_direita += 10
-        """
 
     parede_esquerda = pygame.draw.rect(janela, (255, 255, 255), (20, altura_parede_esquerda, 10, 150))
     parede_direita = pygame.draw.rect(janela, (255, 255, 255), (largura - 30, altura_parede_direita, 10, 150))
